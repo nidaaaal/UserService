@@ -8,11 +8,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Persistence\" />
+    <PackageReference Include="Dapper" Version="2.1.66" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.3.0" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="6.1.1" />
+    <PackageReference Include="Npgsql" Version="9.0.3" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\UserService.Domain\UserService.Domain.csproj" />
+    <ProjectReference Include="..\UserService\UserService.Shared\UserService.Shared.csproj" />
   </ItemGroup>
 
 </Project>
